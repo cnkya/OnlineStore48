@@ -1,0 +1,28 @@
+### start project
+npm start
+## start server
+python3 sever.python3
+
+##GIT
+
+#initialize repo
+git initialize
+#add .gitignore
+
+
+#add a remote (github url)
+git add remote origin <REPO URL>
+
+#add files (stage changes)
+git add .
+
+# create a commit  (snapshot)
+git commit -m "ANY MESSAGE"
+
+
+# push the first time
+git push -u origin main     ( or master )
+
+# push nth time
+git push
+
