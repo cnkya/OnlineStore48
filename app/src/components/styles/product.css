@@ -1,0 +1,26 @@
+.product{
+    display: inline-block;
+    border: 1px solid #999;
+    border-radius: 4px;
+    width: 200px;
+    height: 400px;
+    margin: 10px;
+    background-color: rgb(213,208,205);
+
+}
+
+.product img{
+    width: 200px;
+    
+}
+.product h5{
+    font-size: 18px;
+    color: rgb(12, 12, 12);
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.product .total{
+    
+}

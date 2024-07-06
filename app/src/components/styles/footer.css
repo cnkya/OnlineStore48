@@ -1,0 +1,18 @@
+.footer{
+            
+    left: 0;
+    bottom:0;    
+    width: 100%;    
+    text-align: center;
+    background-color: var(--background);
+    
+
+    
+}
+.footer div{
+    
+    margin-top: 15px;
+    
+    
+    
+}

@@ -1,0 +1,9 @@
+.catalog h1{
+    color: black;
+    text-align: center;
+    margin: 12px 0;
+}
+
+.catalog .filters button{
+    margin-right: 5px;
+}
