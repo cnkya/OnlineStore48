@@ -32,19 +32,19 @@ const data = [
         image: "hoodie1.jpg",
         _id: "123ed",
     },
-    
+
 ];
-function Catalog(){
-    return(
-        <div className="catalog">
+function Catalog() {
+    return (
+        <div className="catalog page">
             <h1>Hoodies R US</h1>
-            
-        <div className="filters">
-            {categories.map(cat => <button className="btn btn-sm btn-dark">{cat}</button>)}
-        </div>    
+
+            <div className="filters">
+                {categories.map(cat => <button className="btn btn-sm btn-dark">{cat}</button>)}
+            </div>
             {data.map(prod => <Product info={prod} />)}
-    
-            
+
+
         </div>
     );
 }

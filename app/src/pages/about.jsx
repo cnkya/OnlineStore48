@@ -9,7 +9,7 @@ function About() {
     function getInfo() {
         if (isInfoVisible) {
             return (
-                <div className="info">
+                <div className="">
                     <p>Email: mrs.nkya@gmail.com </p>
                     <p> Phone: (555)555-5555</p>
                 </div>
@@ -22,7 +22,7 @@ function About() {
     }
 
     return (
-        <div>
+        <div className="about page">
             <h2>Christina Nkya</h2>
             {getInfo()}
 

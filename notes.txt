@@ -26,3 +26,10 @@ git push -u origin main     ( or master )
 # push nth time
 git push
 
+"Create separate pages
+npm install -s react-router-dom
+then npm start
+Then add the below syntax
+<BrowserRouter> wraps the components
+<Routes> wraps the routes
+<Route path="/" element={what you want to be a page}/>
