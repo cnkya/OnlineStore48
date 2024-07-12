@@ -7,3 +7,8 @@
 .catalog .filters button{
     margin-right: 5px;
 }
+
+.catalog img{
+    width: 200px;
+    height: 230px;
+}

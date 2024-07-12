@@ -1,24 +1,25 @@
 import { useState } from 'react';
 import './styles/quantity.css';
 
-function Quantity(){
-    const [quantity, setQuantity]=useState(1);
+function Quantity(props) {
+    const [quantity, setQuantity] = useState(1);
 
-    function decrease(){
+    function decrease() {
         let val = quantity - 1;
-        if(val < 1) val = 1;
+        if (val < 1) val = 1;
 
-        console.log("btn clicked");
         setQuantity(val);
+        props.onChange(val);
     }
-    function increase(){
+    function increase() {
         let val = quantity + 1;
-        console.log("btn clicked");
+
         setQuantity(val);
+        props.onChange(val);
     }
-    return(
+    return (
         <div className="quantity">
-            <button disabled={quantity ===1} onClick={decrease}>-</button>
+            <button disabled={quantity === 1} onClick={decrease}>-</button>
 
             <label>{quantity}</label>
 

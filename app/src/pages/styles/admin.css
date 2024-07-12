@@ -1,0 +1,17 @@
+.admin .parent{
+    display: flex;
+}
+
+.admin .sec-prods{
+    flex:1
+}
+.admin .sec-coupons{
+    flex: 1;
+}
+.admin .form {
+    background-color: white;
+    border: 1px solid #817f7f;
+    border-radius: 4px;
+    margin: 5px 30px;
+    padding: 10px;
+}

@@ -1,5 +1,6 @@
 ### start project
 npm start
+
 ## start server
 python3 sever.python3
 
@@ -26,10 +27,13 @@ git push -u origin main     ( or master )
 # push nth time
 git push
 
-"Create separate pages
+#Create separate pages
 npm install -s react-router-dom
 then npm start
 Then add the below syntax
 <BrowserRouter> wraps the components
 <Routes> wraps the routes
 <Route path="/" element={what you want to be a page}/>
+
+onBlur = reads the value once you leave the section (click outside the box)
+OnChange = changes the value

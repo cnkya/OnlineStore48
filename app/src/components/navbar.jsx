@@ -23,7 +23,10 @@ function Navbar() {
                             <Link className="nav-link" to="/about">About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" aria-current="page" to="/catalog">Shop</Link>
+                            <Link className="nav-link" aria-current="page" to="/catalog"><i class="fa-solid fa-shop"></i> Shop</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" aria-current="page" to="/admin"> <i class="fa-solid fa-lock"></i>Admin</Link>
                         </li>
                     </ul>
                     <form className="d-flex" role="search">
