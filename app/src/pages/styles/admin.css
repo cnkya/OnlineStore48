@@ -1,3 +1,10 @@
+.admin{
+    background-image: linear-gradient(rgb(241, 235, 235), rgb(245, 203, 226));
+}
+    
+    
+    
+
 .admin .parent{
     display: flex;
 }
@@ -9,9 +16,11 @@
     flex: 1;
 }
 .admin .form {
-    background-color: white;
     border: 1px solid #817f7f;
     border-radius: 4px;
     margin: 5px 30px;
     padding: 10px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }

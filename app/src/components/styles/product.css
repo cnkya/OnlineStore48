@@ -1,16 +1,20 @@
 .product{
     display: inline-block;
-    border: 1px solid #999;
+    border: 4px solid #7c6868;
     border-radius: 4px;
     width: 200px;
     height: 400px;
     margin: 10px;
-    background-color: rgb(213,208,205);
+    background-color: rgb(245, 239, 235);
+    vertical-align: top;
+    
 
 }
 
 .product img{
-    width: 200px;
+    width: 192px;
+    
+    
     
 }
 .product h5{
@@ -25,7 +29,6 @@
     margin-right: 12px;
 }
 
-.product button{
+
 
     
-}

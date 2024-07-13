@@ -51,4 +51,5 @@ body{
 }
 .page{
   min-height: calc(100vh - 106px);
+  background-image: linear-gradient(rgb(248, 244, 244), rgb(245, 203, 226));
 }
