@@ -14,6 +14,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import GlobalProvider from './state/globalProvider';
+import Cart from './pages/cart';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/about" element={<About/>}/>
             <Route path="/admin" element={<Admin/>}/>
             <Route path="/contact" element={<Contact/>}/>
+            <Route path="/cart" element={<Cart/>}/>
           </Routes>
         
         
