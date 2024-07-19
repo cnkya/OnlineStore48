@@ -1,10 +1,10 @@
-const categories = ["Adult", "Youth", "Women", "Men"]
+const categories = ["Adult/Unisex", "Kid", "Women", "Men"]
 const data = [
     {
-        title: "Unisex Adult Hoodies",
+        title: "Unisex Adult Gray Hoodie",
         price: 24.99,
         category: "Adult",
-        image: "adult hoodie.jpg",
+        image: "unisexhoodie2.jpg",
         _id: "123ea",
     },
     {
@@ -15,6 +15,20 @@ const data = [
         _id: "123eb",
     },
     {
+        title: "Kids Black -bruh.- Hoodie ",
+        price: 11.99,
+        category: "Kid",
+        image: "kid hoodie2.jpg",
+        _id: "123ex",
+    },
+    {
+        title: "Kids Yellow -Keep Hustling- Hoodie ",
+        price: 11.99,
+        category: "Kid",
+        image: "kidshoodie3.jpg",
+        _id: "123eu",
+    },
+    {
         title: "Women's Purple-Oversized Hoodie",
         price: 24.99,
         category: "Women",
@@ -22,13 +36,41 @@ const data = [
         _id: "123ec",
     },
     {
+        title: "Women's Pink Hoodie",
+        price: 34.99,
+        category: "Women",
+        image: "women hoodie2.jpg",
+        _id: "123ee",
+    },
+    {
+        title: "Women's Gray Hoodie",
+        price: 34.99,
+        category: "Women",
+        image: "women hoodie3.jpg",
+        _id: "123ez",
+    },
+    
+    {
+        title: "Men's Dark Grey Hoodie",
+        price: 24.99,
+        category: "Men",
+        image: "men hoodie4.jpg",
+        _id: "123ed",
+    },
+    {
         title: "Men's Green-Oversized with Graphic Hoodie",
         price: 34.99,
         category: "Men",
         image: "men green hoodie.jpg",
-        _id: "123ed",
+        _id: "123em",
     },
-
+    {
+        title: "Men's Light Grey Hoodie",
+        price: 19.99,
+        category: "Men",
+        image: "men hoodie3.jpg",
+        _id: "123es",
+    },
 ];
 
 
