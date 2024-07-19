@@ -37,3 +37,14 @@ Then add the below syntax
 
 onBlur = reads the value once you leave the section (click outside the box)
 OnChange = changes the value
+
+##micellanous
+https://nodejs.org/en
+
+## Creating a service (handles commuication between the server and the UI components)
+class then name of service{}
+
+##micellanous
+useEffect-controls execution and how many times it is done
+useState-allows you to state a variable so that you use a function to change it
+useContext

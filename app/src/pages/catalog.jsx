@@ -1,40 +1,26 @@
 import './styles/catalog.css';
 import Product from '../components/product';
+import { useEffect, useState } from 'react';
+import dataService from '../services/dataService';
 
 
-const categories = ["Adult", "Youth", "Women", "Men"]
-const data = [
-    {
-        title: "Hoodie (Adult/Unisex)",
-        price: 24.99,
-        category: "Adult",
-        image: "adult hoodie.jpg",
-        _id: "123ea",
-    },
-    {
-        title: "Hoodie (Youth) ",
-        price: 24.99,
-        category: "Kid",
-        image: "kid hoodie.jpg",
-        _id: "123eb",
-    },
-    {
-        title: "Hoodie (Women)",
-        price: 24.99,
-        category: "Women",
-        image: "hoodie1.jpg",
-        _id: "123ec",
-    },
-    {
-        title: "Hoodie (Men)",
-        price: 24.99,
-        category: "Men",
-        image: "men green hoodie.jpg",
-        _id: "123ed",
-    },
 
-];
 function Catalog() {
+    const [products, setProducts] = useState([]);
+    const [categories, setCategories] = useState([]);
+
+    //does something when the component loads
+    useEffect(function () {
+        console.log("Catalog loaded!");
+
+        //fetch data from the server
+        const prods = dataService.getProducts();
+        const cats = dataService.getCategories();
+
+        //set the fetched data to our state variables
+        setProducts(prods);
+        setCategories(cats);
+    }, [])
     return (
         <div className="catalog page p-3 mb-2 bg-secondary-subtle text-secondary-emphasis">
             <h1>Hoodies R US</h1>
@@ -42,7 +28,7 @@ function Catalog() {
             <div className="filters">
                 {categories.map(cat => <button className="btn btn-sm btn-dark">{cat}</button>)}
             </div>
-            {data.map(prod => <Product info={prod} />)}
+            {products.map(prod => <Product info={prod} />)}
 
 
         </div>

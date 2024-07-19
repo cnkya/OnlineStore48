@@ -44,7 +44,7 @@ function Cart() {
                     <h3>${getTotal()}</h3>
 
                     <hr />
-                    <button className='btn btn-primary'>Proceed to Checkout</button>
+                    <button className='btn btn-sm btn-dark'>Proceed to Checkout</button>
 
                 </section>
             </div>

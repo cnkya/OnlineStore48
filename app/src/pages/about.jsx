@@ -16,7 +16,7 @@ function About() {
             );
         } else {
             return (
-                <p className="alert alert-info">Click the button to view my info</p>
+                <p className="alert alert-light">Click the button to view my info</p>
             );
         }
     }
@@ -29,7 +29,7 @@ function About() {
             {isInfoVisible ? (
                 ""
             ) : (
-                <button onClick={showInfo}>Click to view Info</button>
+                <button className="btn btn-sm btn-dark" onClick={showInfo}>Click here</button>
             )}
         </div>
     );
