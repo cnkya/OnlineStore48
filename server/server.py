@@ -43,7 +43,29 @@ def saveProducts():
 
 @app.get("/api/products")
 def getProduct():
-    return json.dumps(items)
+
+    cursor = db.products.find({})# reads all the products from the database
+    results = []
+    for prod in cursor: #travel the cursor data with a for loop to something that can be manipulated
+        if "category" in prod:
+            results.append(fix_id(prod))
+
+    return json.dumps(results)# returns the product using json to transform the data inot text
+
+@app.get("/api/categories")
+def get_categories():
+    cursor = db.products.find({}) 
+    cats = []
+    
+
+    for prod in cursor:
+        if "category" in prod:
+            cat = prod["category"]
+            if cat not in cats: #if the category is not already in the list, we add it.
+                cats.append(prod["category"])
+
+
+    return json.dumps(cats)
 
 
 app.run(debug = True) # every time I change something in the code, the changes will be reflected in the server

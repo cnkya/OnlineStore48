@@ -6,3 +6,20 @@ To create a new virtualenv
 
 To activate the virtualenv
 venv\scripts\activate
+
+-mac
+source ven/bin/activate
+
+-to check python version
+Windows- py --version
+Mac-  python3 --version
+
+--To run python server
+py server.py (not the best way)
+
+--cursor is a dumbed down version of a list
+
+--REST API
+REST tools => REST API
+
+
