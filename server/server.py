@@ -2,6 +2,7 @@
 from flask import Flask, request # to import a library into the project / request comes with http
 import json
 from config import db
+from flask_cors import CORS
 
 # define golbal variables
 items = []
@@ -11,6 +12,7 @@ def fix_id(obj): #turn the object id from mongodb into a string/text
     return obj
 #
 app = Flask(__name__) # To use the name of the server / for backwards compatibility
+CORS(app) # To use the name of the server / for backwards compatibility/ allow request from any origin (localhost)
 
 @app.get("/") # Try to get something from the server /= the root
 def home():

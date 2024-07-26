@@ -22,4 +22,9 @@ py server.py (not the best way)
 --REST API
 REST tools => REST API
 
+{} = a  dictionary in python
+[] = a list in python
 
+CORS = cross orgin resource sharing
+
+##arrow functions

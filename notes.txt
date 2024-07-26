@@ -44,7 +44,17 @@ https://nodejs.org/en
 ## Creating a service (handles commuication between the server and the UI components)
 class then name of service{}
 
-##micellanous
-useEffect-controls execution and how many times it is done
-useState-allows you to state a variable so that you use a function to change it
-useContext
+##Hooks
+useEffect-controls execution -you tell it what to do-and how many times it is done-when to do it-
+useState-like a magical marker that lets you write on this board and change what's written whenever you need to. It gives you two things:
+
+A way to read what's currently written (like looking at the board)
+A way to change what's written (like using the magical marker)
+
+useContext-ike a village-wide announcement system that lets you share important information with every part of your treehouse village at once.
+
+##
+async- the code will be executed without waiting for other codes to run/exeutes muliple task at once
+await- will have to wait for a code to run before also running or completing a task
+
+axios-used to create http request-get, post, put, and delete

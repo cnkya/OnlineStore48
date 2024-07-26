@@ -11,16 +11,33 @@ function Catalog() {
 
     //does something when the component loads
     useEffect(function () {
-        console.log("Catalog loaded!");
-
+        //console.log("Catalog loaded!");
+        loadCatalog();
+        loadCategories();
         //fetch data from the server
-        const prods = dataService.getProducts();
-        const cats = dataService.getCategories();
+        // const prods = dataService.getProducts();
+        //const cats = dataService.getCategories();
 
         //set the fetched data to our state variables
-        setProducts(prods);
-        setCategories(cats);
+        //setProducts(prods);
+        //setCategories(cats);
     }, [])
+
+    async function loadCatalog() {
+
+        let prods = await dataService.getProducts();
+        setProducts(prods);
+        console.log(prods);
+
+
+    }
+
+    async function loadCategories() {
+        let cats = await dataService.getCategories();
+        setCategories(cats);
+        console.log(cats);
+
+    }
     return (
         <div className="catalog page p-3 mb-2 bg-secondary-subtle text-secondary-emphasis">
             <h1>Hoodies R US</h1>
